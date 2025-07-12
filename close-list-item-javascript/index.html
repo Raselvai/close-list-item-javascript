@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Closeable List Item with JavaScript</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  
+
+    <div class="wrapper">
+        <h2>Closeable List Items!</h2>
+        <ul>
+            <li>Fresh Hand-coded Design.</li>
+            <li>Fully 100% Responsive. <span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>Exquisite markup with proper comment.<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>W3C validated HTML/CSS.<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>compatible with desktop, tablet, mobile browsers and devices.<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>SEO optimized (Proper use of Meta tag).<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>Javascript/JQuery Animation.<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>Cross-Browser Compatibility (Firefox, Chrome, Opera, Safari etc.)<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>Super Fast Delivery<span class="close"><i class="fal fa-window-close"></i></span></li>
+            <li>Upload to Server<span class="close"><i class="fal fa-window-close"></i></span></li>
+        </ul>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        var closebtns = document.getElementsByClassName("close");
+        var i;
+
+        for (i = 0; i < closebtns.length; i++) {
+            closebtns[i].addEventListener("click", function(){
+                this.parentElement.style.display = 'none';
+            });
+        }
+
+    </script>
+</body>
+</html>
